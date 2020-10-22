@@ -1,0 +1,36 @@
+Stuff to understand
+
+dice D6 1,2,3,4,5,6
+numbers from number of faces down to 1 in steps of one
+all numbers will be whole numbers.
+rand() will return random number from 0 -> 32,000(ish)
+srand(seed) will start the random sequence at a particular point.
+time(0) will return the number of miliseconds since 1970 (ish)
+any number mod 6 will results in one of the following 0,1,2,3,4,5
+If we add 1 to these we get the numbers on a D6
+std::cout << "output"
+std::cin >> input
+
+
+
+
+
+
+Pseudo code
+int dieFaces
+
+srand(now)
+output "How many faces on your Dice ?"
+input dieFaces
+rollDice(dieFaces);
+rollDice(dieFaces);
+...
+
+rollDice(dieFaces);
+
+rollDice( int dieFaces)
+{
+	int result
+	result = rand() % dieFaces +1
+	output "you rolled a " & result
+}
