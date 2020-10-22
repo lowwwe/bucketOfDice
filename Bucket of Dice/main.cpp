@@ -9,6 +9,8 @@
 #include <cstdlib> // srand & rand
 #include <ctime> // time
 
+void rollDice(int t_noOfFaces);
+
 int main()
 {
 	int diceFaces = 0;
@@ -16,5 +18,13 @@ int main()
 	std::srand(static_cast<unsigned>(std::time(nullptr)));
 	std::cout << "How many faces on the dice? ";
 	std::cin >> diceFaces;
+	rollDice(diceFaces);
 	return 1;
+}
+
+void rollDice(int t_noOfFaces)
+{
+	int result = -1;
+	result = (std::rand() % t_noOfFaces) + 1;
+	std::cout << "You rolled a " << result << std::endl;
 }
