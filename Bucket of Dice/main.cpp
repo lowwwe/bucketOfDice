@@ -2,10 +2,10 @@
 // date Oct 2020
 // bucket of dice
 // estimated time 15 minutes
+// actual time 30 min
+// session 1 start 12:00 - 12:46 (15 min other stuff)
 
-// session 1 start 12:00
-
-#include <iostream> // cout & cin
+#include <iostream> // cout & cin & system
 #include <cstdlib> // srand & rand
 #include <ctime> // time
 
@@ -19,6 +19,18 @@ int main()
 	std::cout << "How many faces on the dice? ";
 	std::cin >> diceFaces;
 	rollDice(diceFaces);
+	rollDice(diceFaces);
+	rollDice(diceFaces);
+	rollDice(diceFaces);
+	rollDice(diceFaces);
+
+	rollDice(diceFaces);
+	rollDice(diceFaces);
+	rollDice(diceFaces);
+	rollDice(diceFaces);
+	rollDice(diceFaces);
+
+	std::system("pause");
 	return 1;
 }
 
